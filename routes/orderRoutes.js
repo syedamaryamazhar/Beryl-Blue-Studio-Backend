@@ -21,7 +21,7 @@ router.post("/checkout", (req, res) => {
 
   const sql = `
     INSERT INTO orders 
-    (name, phone, email, address, payment_method, subtotal, shipping, total)
+    (name, phone, email, address, payment, subtotal, shipping, total)
     VALUES (?, ?, ?, ?, ?, ?, ?, ?)
   `;
 
